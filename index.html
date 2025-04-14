@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Документ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="widget-trigger">
+      <button id="toggleWidget">Открыть виджет</button>
+    </div>
+
+    <section class="widget">
+      <header class="widget__header">
+        <button class="widget__back">
+          <img src="./img/back.svg" alt="Назад" />
+        </button>
+        <h2 class="widget__title">Выберите дату и время</h2>
+        <button class="widget__close">
+          <img src="./img/close.svg" alt="Закрыть" />
+        </button>
+      </header>
+
+      <section class="widget__content">
+        <article class="widget-option">
+          <h3 class="widget-option__title">Выбрать услуги</h3>
+          <button class="widget-option__button">
+            <img src="./img/arrowRight.svg" alt="Перейти" />
+          </button>
+          <img
+            class="widget-option__img"
+            src="./img/services.svg"
+            alt="Услуги"
+          />
+        </article>
+
+        <article class="widget-option">
+          <h3 class="widget-option__title">Выбрать специалиста</h3>
+          <button class="widget-option__button">
+            <img src="./img/arrowRight.svg" alt="Перейти" />
+          </button>
+          <img
+            class="widget-option__img"
+            src="./img/specialist.svg"
+            alt="Специалист"
+          />
+        </article>
+
+        <article class="widget-option" data-type="records">
+          <h3 class="widget-option__title">Мои записи</h3>
+          <button class="widget-option__button">
+            <img src="./img/arrowRight.svg" alt="Перейти" />
+          </button>
+          <img
+            class="widget-option__img"
+            src="./img/records.svg"
+            alt="Записи"
+          />
+        </article>
+      </section>
+
+      <section class="widget-records">
+        <article class="record">
+          <header class="record__header">
+            <div class="record__info">
+              <div class="avatar" data-size="m">AA</div>
+              <div class="record__name">Имя исполнителя</div>
+            </div>
+            <div
+              class="chip"
+              data-size="m"
+              data-color="grey"
+              data-shape="round"
+            >
+              8 апреля 14:30
+            </div>
+          </header>
+          <div class="record__branch">Основной филиал</div>
+          <div class="record__details">
+            <div class="record__service">
+              <div class="record__service-name">Массаж классический</div>
+              <div class="record__service-duration">1 ч</div>
+            </div>
+            <div class="record__price">1 800₽</div>
+          </div>
+        </article>
+        <article class="record">
+          <header class="record__header">
+            <div class="record__info">
+              <div class="avatar" data-size="m">AA</div>
+              <div class="record__name">Имя исполнителя</div>
+            </div>
+            <div
+              class="chip"
+              data-size="m"
+              data-color="grey"
+              data-shape="round"
+            >
+              8 апреля 14:30
+            </div>
+          </header>
+          <div class="record__branch">Основной филиал</div>
+          <div class="record__details">
+            <div class="record__service">
+              <div class="record__service-name">Массаж классический</div>
+              <div class="record__service-duration">1 ч</div>
+            </div>
+            <div class="record__price">1 800₽</div>
+          </div>
+        </article>
+        <article class="record">
+          <header class="record__header">
+            <div class="record__info">
+              <div class="avatar" data-size="m">AA</div>
+              <div class="record__name">Имя исполнителя</div>
+            </div>
+            <div
+              class="chip"
+              data-size="m"
+              data-color="grey"
+              data-shape="round"
+            >
+              8 апреля 14:30
+            </div>
+          </header>
+          <div class="record__branch">Основной филиал</div>
+          <div class="record__details">
+            <div class="record__service">
+              <div class="record__service-name">Массаж классический</div>
+              <div class="record__service-duration">1 ч</div>
+            </div>
+            <div class="record__price">1 800₽</div>
+          </div>
+        </article>
+      </section>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
