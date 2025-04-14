@@ -177,6 +177,7 @@ body {
 .record__details {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .record__service {
